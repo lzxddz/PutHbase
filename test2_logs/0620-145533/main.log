@@ -1,7 +1,0 @@
-CellSize(B):100, ThreadCount:10, ColumnCount:1000, RowCountPerThread:1000000, AllBlobCount:10000000000 
-(LogSaveDir:./test2_logs/0620-145533/ , rowCountPerLog:1000)
-
-----hbase config: 
- hbase.zookeeper.quorum10.0.88.53,10.0.88.54,10.0.88.55 | zookeeper.znode.parent/hbase-unsecure | tablename: blobTable1
-2019-06-20 14:55::33
-#### begin ####
