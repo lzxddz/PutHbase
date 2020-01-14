@@ -30,9 +30,8 @@ public class MyHBaseTest2 {
 //    private static Table table = null;
     private static Admin admin = null;
 
-    public static final String hbaseZkQuorum = "10.0.88.53,10.0.88.54,10.0.88.55";
-//    public static final String hbaseZkQuorum = "10.0.82.235,10.0.82.236,10.0.82.237";
-    public static final String zkZnodeParent = "/hbase-unsecure";
+    public static final String hbaseZkQuorum = "10.0.82.216,10.0.82.217,10.0.82.218";
+    public static final String zkZnodeParent = "/hbase";
 
     static {
         // 设置连接信息
@@ -55,11 +54,11 @@ public class MyHBaseTest2 {
         // 创建表
         String[] colFams = {"blob"};
         String tblNameStr = "blobTable2";
-        long colCount = 1000;
-        int threadCount = 10; //线程数
-        long rowCountPerThread = 1000000;//20000; //每个线程写入的记录条数
+        long colCount = 100;
+        int threadCount = 1; //线程数
+        long rowCountPerThread = 1000;//20000; //每个线程写入的记录条数
 
-        long rowCountPerLog = 1000;  //每个线程，记录一次log的写入行数间隔
+        long rowCountPerLog = 100;  //每个线程，记录一次log的写入行数间隔
 
         int cellSize = 100; // 每个cell包含的字符数
 
