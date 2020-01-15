@@ -1,0 +1,35 @@
+CellSize(B):1000000, ThreadCount:10, ColumnCount:1, RowCountPerThread:50000, AllBlobCount:500000 
+(LogSaveDir:./test2_logs/0114-183852/ , rowCountPerLog:1000)
+
+----hbase config: 
+ hbase.zookeeper.quorum10.0.82.216,10.0.82.217,10.0.82.218 | zookeeper.znode.parent/hbase | tablename: blobTable4
+2020-01-14 18:38::52
+#### begin ####
+created thread-0, cell size: 1000000, log file:./test2_logs/0114-183852/thread_0.log
+created thread-1, cell size: 1000000, log file:./test2_logs/0114-183852/thread_1.log
+created thread-2, cell size: 1000000, log file:./test2_logs/0114-183852/thread_2.log
+created thread-3, cell size: 1000000, log file:./test2_logs/0114-183852/thread_3.log
+created thread-4, cell size: 1000000, log file:./test2_logs/0114-183852/thread_4.log
+created thread-5, cell size: 1000000, log file:./test2_logs/0114-183852/thread_5.log
+created thread-6, cell size: 1000000, log file:./test2_logs/0114-183852/thread_6.log
+created thread-7, cell size: 1000000, log file:./test2_logs/0114-183852/thread_7.log
+created thread-8, cell size: 1000000, log file:./test2_logs/0114-183852/thread_8.log
+created thread-9, cell size: 1000000, log file:./test2_logs/0114-183852/thread_9.log
+[Info] Thread Finished: 0
+[Info] Thread Finished: 1
+[Info] Thread Finished: 2
+[Info] Thread Finished: 3
+[Info] Thread Finished: 4
+[Info] Thread Finished: 5
+[Info] Thread Finished: 6
+[Info] Thread Finished: 7
+[Info] Thread Finished: 8
+[Info] Thread Finished: 9
+
+#### end ####
+2020-01-14 19:08::06
+---- Result ----
+CellSize(B):1000000, ThreadCount:10, ColumnCount:1, RowCountPerThread:50000, AllBlobCount:500000 
+ begin: 2020-01-14 18:38:52 , end: 2020-01-14 19:08:06 , total cost: 29m14s | 1754 seconds
+
+ hdfs used: (3.0T - 2.0T = )

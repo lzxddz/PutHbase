@@ -53,14 +53,14 @@ public class MyHBaseTest2 {
     public static void main(String[] args) throws Exception{
         // 创建表
         String[] colFams = {"blob"};
-        String tblNameStr = "blobTable2";
-        long colCount = 100;
-        int threadCount = 1; //线程数
-        long rowCountPerThread = 1000;//20000; //每个线程写入的记录条数
+        String tblNameStr = "blobTable4";
+        long colCount = 1; //10000;
+        int threadCount = 10; //线程数
+        long rowCountPerThread = 100000;//20000; //每个线程写入的记录条数
 
-        long rowCountPerLog = 100;  //每个线程，记录一次log的写入行数间隔
+        long rowCountPerLog = 1000;  //每个线程，记录一次log的写入行数间隔
 
-        int cellSize = 100; // 每个cell包含的字符数
+        int cellSize = 1000000; // 每个cell包含的字符数
 
 //        String fileDir = "./test_files/1KB/";
         String logFileDir = "./test2_logs/";

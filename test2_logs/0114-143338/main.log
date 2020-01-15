@@ -1,0 +1,18 @@
+CellSize(B):100000, ThreadCount:1, ColumnCount:1, RowCountPerThread:100000, AllBlobCount:100000 
+(LogSaveDir:./test2_logs/0114-143338/ , rowCountPerLog:1000)
+
+----hbase config: 
+ hbase.zookeeper.quorum10.0.82.216,10.0.82.217,10.0.82.218 | zookeeper.znode.parent/hbase | tablename: blobTable3
+2020-01-14 14:33::38
+#### begin ####
+created thread-0, cell size: 100000, log file:./test2_logs/0114-143338/thread_0.log
+[Info] Thread Finished: 0
+
+#### end ####
+2020-01-14 14:37::52
+---- Result ----
+CellSize(B):100000, ThreadCount:1, ColumnCount:1, RowCountPerThread:100000, AllBlobCount:100000 
+ begin: 2020-01-14 14:33:38 , end: 2020-01-14 14:37:52 , total cost: 4m14s | 254 seconds
+
+ hdfs used: (418.1G - 475.4G = )
+

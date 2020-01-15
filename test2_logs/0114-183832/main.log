@@ -1,0 +1,17 @@
+CellSize(B):1000000, ThreadCount:10, ColumnCount:1, RowCountPerThread:50000, AllBlobCount:500000 
+(LogSaveDir:./test2_logs/0114-183832/ , rowCountPerLog:1000)
+
+----hbase config: 
+ hbase.zookeeper.quorum10.0.82.216,10.0.82.217,10.0.82.218 | zookeeper.znode.parent/hbase | tablename: blobTable4
+2020-01-14 18:38::32
+#### begin ####
+created thread-0, cell size: 1000000, log file:./test2_logs/0114-183832/thread_0.log
+created thread-1, cell size: 1000000, log file:./test2_logs/0114-183832/thread_1.log
+created thread-2, cell size: 1000000, log file:./test2_logs/0114-183832/thread_2.log
+created thread-3, cell size: 1000000, log file:./test2_logs/0114-183832/thread_3.log
+created thread-4, cell size: 1000000, log file:./test2_logs/0114-183832/thread_4.log
+created thread-5, cell size: 1000000, log file:./test2_logs/0114-183832/thread_5.log
+created thread-6, cell size: 1000000, log file:./test2_logs/0114-183832/thread_6.log
+created thread-7, cell size: 1000000, log file:./test2_logs/0114-183832/thread_7.log
+created thread-8, cell size: 1000000, log file:./test2_logs/0114-183832/thread_8.log
+created thread-9, cell size: 1000000, log file:./test2_logs/0114-183832/thread_9.log
